@@ -1,0 +1,125 @@
+@CHARSET "UTF-8";
+
+* {
+	font-family	: arial;
+	margin		: 0 0;
+}
+
+ul {
+	list-style-type	: none;
+}
+
+h2 {
+	margin-top			: 0;
+	color				: #888FFF;
+	margin-bottom		: 20px;
+	border-bottom		: 1px solid #EEEEFF;
+	background-color	: #FEEEEEF;
+}
+
+#mensagem_cadastro {
+	padding				: 20px 60px;
+	border				: 1px solid #555AAA;
+	background-color	: #CCCEEE;
+	position			: absolute;
+	bottom				: 50px;
+	right				: 20px;
+	-moz-border-radius	: 10px;
+	opacity				: 0.8;
+	font-weight			: bold;
+	font-size			: 13px;
+}
+
+#content {
+    padding	: 0 10px;
+}
+
+/* MENU PRINCIPAL */
+
+#fisheye_menu {
+	list-style	: none;
+	padding		: 0;
+	margin		: 10px;
+	height		: 81px;
+}
+
+#fisheye_menu li {
+	position	: relative;
+	display		: block;
+	float		: left;
+	text-align	: center;
+    width		: 75px;
+}
+
+#fisheye_menu span {
+	position		: absolute;
+	top				: 100%;
+	left			: 0;
+	text-align		: center;
+	width			: 79px;
+	padding			: 1px;
+	margin			: 0;
+	border			: solid 1px #bbb;	
+	color			: #333;
+	background		: #eee;
+	font-size		: 11px;
+	display			: none;
+}
+
+#fisheye_menu a {
+	text-decoration	: none;
+}
+
+#fisheye_menu img {
+	border			: 0;
+	display			: block;
+}
+
+/* / MENU PRINCIPAL */
+
+
+
+
+
+
+
+
+
+
+
+
+ul.errors {
+	color			: #FF0000;
+    font-size		: 11px;
+    list-style-type	: none;
+    margin			: 5px 0 0 130px;
+}
+
+form dl dt {
+	padding	: 5px 0 0;
+	clear	: both;
+}
+form label { font-size: 12px; }
+form input {
+	float	: left;
+}
+
+#submit-element {
+	margin-left: 0;
+}
+
+#separator {border-left:2px solid #CCC0FF;}
+
+/* RODAPÉ */
+#footer {
+	background-color: #EEEFFF;
+    border-top		: 1px solid #999FFF;
+    color			: #555555;
+    height			: 30px;
+    line-height		: 30px;
+    width			: 100%;
+    text-align		: center;
+    position		: fixed;
+    bottom			: 0;
+    font-size		: 12px;
+}
