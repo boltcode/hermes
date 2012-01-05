@@ -1,0 +1,29 @@
+<?php 
+	echo '<table>';
+	echo '<tr>';
+	echo '<td>ID</td>';
+	echo '<td>Cor</td>';
+	echo '<td>Tamanho</td>';
+	echo '<td>Quantidade</td>';
+	echo '<td>Referências</td>';
+	echo '<td>Artigo</td>';
+	echo '<td>Página</td>';
+	echo '<td>Preço</td>';
+	echo '</tr>';
+	
+	foreach ($this->produtos as $produto)
+	{
+		echo '<tr>';
+		echo '<td>' . $produto['id']				. '</td>';
+		echo '<td>' . $produto['cor_id'] 			. '</td>';
+		echo '<td>' . $produto['tamanho_id'] 		. '</td>';
+		echo '<td>' . $produto['quantidade']		. '</td>';
+		echo '<td>' . $produto['referencia']		. '</td>';
+		echo '<td>' . $produto['artigo'] 			. '</td>';
+		echo '<td>' . $produto['pagina'] 			. '</td>';
+		echo '<td>' . $produto['preco'] 			. '</td>';
+		echo '</tr>';
+	}
+	
+	echo '</table>';
+?>

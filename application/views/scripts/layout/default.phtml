@@ -1,0 +1,43 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <title>Produtos</title>
+	    
+		<link href="<?php echo $this->baseUrl(); ?>/css/estilo.css" rel="stylesheet" type="text/css">
+		
+		<?php
+			$this->headScript()->prependFile($this->baseUrl().'/scripts/main.js'); 
+			$this->headScript()->prependFile($this->baseUrl().'/scripts/jquery.js');
+			
+			echo $this->headScript();
+		?>
+		
+	</head>
+	<body>
+		<div id="main_menu">
+			<ul id="fisheye_menu">
+				<li><a id="addProduto" href="<?php echo $this->baseUrl(); ?>/produto/add"><img src="<?php echo $this->baseUrl(); ?>/imagens/addProduto.png" /><span>Adicionar Produto</span></a></li>
+				<li><a id="addTamanho" href="<?php echo $this->baseUrl(); ?>/tamanho/add"><img src="<?php echo $this->baseUrl(); ?>/imagens/addTamanho.png" /><span>Adicionar Tamanho</span></a></li>
+				<li><a id="addCor" href="<?php echo $this->baseUrl(); ?>/cor/add"><img src="<?php echo $this->baseUrl(); ?>/imagens/addCor.png" /><span>Adicionar Cor</span></a></li>
+				<li><a id="listProduto" href="<?php echo $this->baseUrl(); ?>/produto/list"><img src="<?php echo $this->baseUrl(); ?>/imagens/addProduto.png" /><span>Listar Produtos</span></a></li>
+			</ul> 
+		</div>
+		<div id="content">
+			<?php
+				
+				echo $this->layout()->content;
+				
+				if (isset($this->mensagem)) {
+					echo "<div id='mensagem_cadastro'>" . $this->mensagem . "</div>";
+				}
+			?>
+		</div>
+		<div id="footer">
+			Desenvolvido por Diogo Alexsander Cavilha. | <?php echo date("d-m-Y"); ?> &copy;
+		</div>
+	</body>
+</html>
